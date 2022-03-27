@@ -2,24 +2,16 @@
 
 void Display(int iRow,int iCol)
 {
+
 	
 	
 	int i=0,j=0;
 	
-	
-	for(i=iRow;i>=1;i--)
+	for(i=1;i<=iRow;i++)
 	{
-		for(j=iCol;j>=1;j--)
+		for(j=1;j<=iCol;j++)
 		{
-			if(i==j)
-			{
-			printf("$");
-			}
-			else
-			{
-			printf("*");
-			}
-			
+			printf("*\t");
 		}
 		printf("\n");
 	}
@@ -30,10 +22,11 @@ int main()
 	int iValue=0;
 	int iValue1=0;
 	
-	printf("enter number of rows");
+	
+	printf("Enter number rows\n");
 	scanf("%d",&iValue);
 	
-	printf("enter number of colums");
+	printf("Enter number coloum\n");
 	scanf("%d",&iValue1);
 	
 	Display(iValue,iValue1);

@@ -2,30 +2,20 @@
 
 void Display(int iRow,int iCol)
 {
+
+	
+	
 	int i=0,j=0;
 	
-	if(iRow!=iCol) // filter
-	{
-		return;
-	}
 	for(i=1;i<=iRow;i++)
 	{
 		for(j=1;j<=iCol;j++)
 		{
-			
-			if(i==j)
-			{	
-			printf("$",i);
-			//printf("#",j);
-			}
-			else if (i<j)
-			{	
-			printf("#",j);
-			}
-			else
+			if(i>=j)
 			{
-				printf("*");
+				printf("*",i);
 			}	
+			
 		}
 		printf("\n");
 	}
